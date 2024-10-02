@@ -35,6 +35,15 @@ const NavBar = () => {
           <Link style={{ textDecoration: "none", color: "#96969a", display: "flex", gap: "5px" }}>NavTo</Link>
         </li>
       </ul>
+      <div className="nav-user-controller">{localStorage.getItem("auth-token") ? (
+          <div className="nav-user-controll">
+            {/* <UserMenu /> */}
+          </div>
+        ) : (
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <button className="login-button">Login</button>
+          </Link>
+        )}</div>
     </div>
   );
 };
