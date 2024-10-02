@@ -13,7 +13,10 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="icon">
-        <img src={icon} alt="" />
+        <Link style={{ textDecoration: "none", color: "#96969a", display: "flex", gap: "5px" }}>
+          <img src={icon} alt="" />
+          <p>Web Name</p>
+        </Link>
       </div>
       <div className="search">
         <input type="text" onKeyPress={handleSearchKeyPress} placeholder="Type something" />
