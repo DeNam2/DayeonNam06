@@ -30,18 +30,20 @@ div {
     font-weight: 500;
 }
 
-/* .nav-menu li{
+.nav-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3px;
     cursor: pointer;
-} */
-.search{
+}
+
+.search {
     box-sizing: border-box;
 }
 
-.search > input{
+.search>input {
     border: none;
     width: 600px;
     height: 50px;
@@ -49,21 +51,31 @@ div {
     padding-left: 10px;
     font-size: 16px;
 }
-.nav-user-controller{
+
+.nav-user-controller {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 10px;
 }
 
-.login-button{
+.login-button {
     width: 157px;
     height: 58px;
     outline: none;
-    border: 1px solid #7a7a7a;
+    /* border: 1px solid #7a7a7a; */
+    border: none;
     border-radius: 75px;
     /* color: #d4d4d4; */
     font-weight: 500;
     /* background: #404044; */
     cursor: pointer;
+}
+
+ul {
+    box-sizing: border-box;
+}
+
+ul>li:hover {
+    background-color: #626262;
 }
